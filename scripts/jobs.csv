@@ -1,0 +1,4 @@
+detector,isotope,n_bins,n_signal,n_background,e_min_keV,e_max_keV,normalization,acq_time_s,seed,out_prefix
+NaI,Cs-137,2048,20000,20000,0,3000,raw,,123,cs137_nai
+NaI,Co-60,2048,30000,20000,0,3000,cps,60,124,co60_nai_cps
+NaI,Am-241,1024,5000,5000,0,400,unit_area,,125,am241_roi
