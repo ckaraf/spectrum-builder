@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134778.svg)](https://doi.org/10.5281/zenodo.18134778)
 # Isotope Spectrum Builder
 
 Generate **detector-aware gamma-ray spectra** by combining:
