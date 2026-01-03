@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# Streamlit cache
+.streamlit/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
