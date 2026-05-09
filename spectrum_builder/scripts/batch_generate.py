@@ -54,9 +54,13 @@ import pandas as pd
 # Add the repository root to sys.path so `import spectrum_builder` works
 # regardless of how/where the script is invoked.
 # -------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parents[1]
+# Allows direct execution from the source tree:
+# python spectrum_builder/scripts/batch_generate.py
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+
 
 # Now we can import the package modules safely.
 from spectrum_builder.config import DETECTOR_CONFIG  # noqa: E402

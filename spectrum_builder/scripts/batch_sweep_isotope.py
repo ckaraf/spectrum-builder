@@ -58,9 +58,11 @@ import numpy as np
 # Add repository root to sys.path so `import spectrum_builder` works
 # regardless of where this script is invoked from.
 # -------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+
 
 from spectrum_builder.config import DETECTOR_CONFIG  # noqa: E402
 from spectrum_builder.data import load_detector_pools  # noqa: E402

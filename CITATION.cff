@@ -4,8 +4,8 @@ authors:
   - family-names: Karafasoulis
     given-names: Konstantinos
 title: "Isotope Spectrum Builder"
-version: 1.0.0
-date-released: 2026-01-02
+version: 1.0.3
+date-released: 2026-05-09
 url: "https://github.com/ckaraf/spectrum-builder"
-DOI: 10.5281/zenodo.18134778
+DOI: 10.5281/zenodo.18134777
 license: "MIT"

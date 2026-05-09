@@ -1,12 +1,56 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "spectrum-builder"
-version = "1.0.1"
+version = "1.0.3"
+description = "Detector-aware gamma-ray spectrum builder using Geant4 signal pools and measured backgrounds."
+readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["numpy", "pandas", "matplotlib", "streamlit"]
+license = { text = "MIT" }
+authors = [
+  { name = "Konstantinos Karafasoulis" }
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "streamlit"
+]
+
+keywords = [
+  "gamma spectroscopy",
+  "radiation detection",
+  "Geant4",
+  "spectrum",
+  "nuclear physics"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Physics"
+]
+
+[project.urls]
+Homepage = "https://spectrum-builder.streamlit.app"
+Repository = "https://github.com/ckaraf/spectrum-builder/"
+DOI = "https://doi.org/10.5281/zenodo.18134777"
+
+[project.scripts]
+spectrum-builder-app = "spectrum_builder.launch:main"
+spectrum-builder-batch = "spectrum_builder.scripts.batch_generate:main"
+spectrum-builder-sweep = "spectrum_builder.scripts.batch_sweep_isotope:main"
 
 [tool.setuptools.packages.find]
 include = ["spectrum_builder*"]
+
+[tool.setuptools.package-data]
+spectrum_builder = [
+  "data/*.csv",
+  "scripts/*.csv"
+]
+
+

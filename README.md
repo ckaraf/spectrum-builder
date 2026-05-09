@@ -1,5 +1,6 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134778.svg)](https://doi.org/10.5281/zenodo.18134778)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134777.svg)](https://doi.org/10.5281/zenodo.18134777)
 # Isotope Spectrum Builder
+
 
 Generate **detector-aware gamma-ray spectra** by combining:
 
@@ -30,3 +31,16 @@ python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
+
+
+## Installation from PyPI
+
+Spectrum Builder can be installed directly from PyPI:
+
+```bash
+pip install spectrum-builder
+
+
+Then run the web application with
+
+spectrum-builder-app

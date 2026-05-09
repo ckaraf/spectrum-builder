@@ -12,20 +12,23 @@ License: MIT
 
 from pathlib import Path
 
+PACKAGE_DIR = Path(__file__).resolve().parent
+DATA_DIR = PACKAGE_DIR / "data"
+
 DETECTOR_CONFIG = {
     "NaI": {
-        "signal_path": Path("data/smeared_energies_NaI.csv"),
-        "background_path": Path("data/background_sample_NaI.csv"),
+        "signal_path": DATA_DIR / "smeared_energies_NaI.csv",
+        "background_path": DATA_DIR / "background_sample_NaI.csv",
         "info": "NaI(Tl) detector: 3'' × 3'' scintillation crystal.",
     },
     "CZT": {
-        "signal_path": Path("data/smeared_energies_CZT.csv"),
-        "background_path": Path("data/background_sample_CZT.csv"),
+        "signal_path": DATA_DIR / "smeared_energies_CZT.csv",
+        "background_path": DATA_DIR / "background_sample_CZT.csv",
         "info": "CZT detector: 0.5 cm³ volume.",
     },
     "HPGe": {
-        "signal_path": Path("data/smeared_energies_HPGe.csv"),
-        "background_path": Path("data/background_sample_HPGe.csv"),
+        "signal_path": DATA_DIR / "smeared_energies_HPGe.csv",
+        "background_path": DATA_DIR / "background_sample_HPGe.csv",
         "info": "HPGe detector: high-resolution semiconductor detector.",
     },
 }
