@@ -40,7 +40,10 @@ Spectrum Builder can be installed directly from PyPI:
 ```bash
 pip install spectrum-builder
 
-
 Then run the web application with
 
 spectrum-builder-app
+
+The batch scripts can be accessed using
+-spectrum-builder-batch
+-spectrum-builder-sweep
