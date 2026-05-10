@@ -10,8 +10,12 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-  { name = "Konstantinos Karafasoulis" }
+  { name = "Konstantinos Karafasoulis", email = "ckaraf@gmail.com" }
 ]
+maintainers = [
+  { name = "Konstantinos Karafasoulis", email = "ckaraf@gmail.com" }
+]
+
 dependencies = [
   "numpy",
   "pandas",
